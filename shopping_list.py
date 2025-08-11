@@ -1,26 +1,26 @@
 # shopping_list.py
 
 def show_menu():
-  print("\nShopping List Menu:")
-  print("1. Show List")
-  print("2. Add Item")
-  print("3. Remove Item")
-  print("4. Quit")
+    print("\nShopping List Menu:")
+    print("1. Show List")
+    print("2. Add Item")
+    print("3. Remove Item")
+    print("4. Quit")
 
-def main()
-  shopping_list = []
+def main():
+    shopping_list = []
 
-while True:
- show_menu()
- choice = input("Enter your choice (1-4): ")
+    while True:
+        show_menu()
+        choice = input("Enter your choice (1-4): ")
 
- if choice == "1":
-   if shopping_list:
-     print("\nYour shopping list:")
-     for idx, item in enumerate(shopping_list, start=1):
-       print(f"{idx}. {item}")
-   else:
-    print("\nYour shopping list is empty.")
+        if choice == "1":
+            if shopping_list:
+                print("\nYour shopping list:")
+                for idx, item in enumerate(shopping_list, start=1):
+                    print(f"{idx}. {item}")
+            else:
+                print("\nYour shopping list is empty.")
 
         elif choice == "2":
             item = input("Enter an item to add: ")
